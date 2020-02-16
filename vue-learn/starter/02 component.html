@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Hello Vue!</title>
+    <!-- 开发环境版本，包含了有帮助的命令行警告 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="app-7">
+		<!-- 使用了 todo-item 这个自定义组件 -->
+		<todo-item 
+			v-for="item in groceryList"
+			v-bind:todo="item"
+			v-bind:id="item.id">
+		</todo-item>
+	</div>
+
+    <script src="component.js"></script>
+</body>
