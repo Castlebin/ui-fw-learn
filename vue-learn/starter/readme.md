@@ -11,5 +11,5 @@
 ## Vue 视频教程
 
 1. 官网中文教程，DCloud 出品 https://learning.dcloud.io/#/
-2. **英文教程，交互式的，这个厉害！** https://www.vuemastery.com/courses/intro-to-vue-js/
-3. 另一个英文教程 https://scrimba.com/g/gvuedocs
+2. **英文教程，交互式的，这个厉害！** https://scrimba.com/g/gvuedocs
+3. 另一个英文教程 https://www.vuemastery.com/courses/intro-to-vue-js/
