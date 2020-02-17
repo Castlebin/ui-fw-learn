@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Hello Vue!</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="example">
+		<p>origin message: {{ message }}</p>
+		<p>表达式求值 取反：{{ message.split('').reverse().join('') }}</p>
+		<p>使用 计算属性 取反 {{ reverseMessage }}</p>
+		<p>再次使用 计算属性 取反 {{ reverseMessage }}</p>
+		<p>使用 方法调用 取反 {{ reverseMessageMethod() }}</p>
+		<p>再次使用 方法调用 取反 {{ reverseMessageMethod() }}</p>
+		
+		<p>firstname: {{ firstName }}</p>
+		<p>lastname: {{ lastName }}</p>
+		<p>fullname: {{ fullName }}</p>
+	</div>
+
+    <script src="computed.js"></script>
+</body>
