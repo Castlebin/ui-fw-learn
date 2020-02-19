@@ -16,7 +16,7 @@
 		</todo-item>
 	</div>
 	
-	
+	<!-- 一个假想的 Vue 页面 ，使用了多个自定义的 Vue 组件 -->
 	<div id="app">
 	  <app-nav></app-nav>
 	  <app-view>
@@ -24,6 +24,39 @@
 	    <app-content></app-content>
 	  </app-view>
 	</div>
-
+	
     <script src="component.js"></script>
+	
+<!--	
+	<script>
+		Vue.component('blog-post', {
+		  props: ['post'],
+		  template: `
+		    <div>
+		      <h3>{{ post.title }}</h3>
+		      <div v-html="post.content"></div>
+		    </div>
+		  `
+		});
+	</script>
+	
+	<blog-post id="blog"
+	  v-for="post in posts"
+	  v-bind:key="post.id"
+	  v-bind:post="post"
+	></blog-post>
+	
+	<script>
+		new Vue({
+			el: '#blog',
+			data: {
+				posts: [
+					{ id: 1, title: 'My journey with Vue', content:'' },
+					{ id: 2, title: 'Blogging with Vue', content:'' },
+					{ id: 3, title: 'Why Vue is so fun', content:'' }
+				]
+			}
+		});
+	</script>
+	-->
 </body>
