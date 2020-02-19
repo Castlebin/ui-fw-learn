@@ -30,6 +30,10 @@
 			  <br>
 			  <span>Checked names: {{ checkedNames }}</span>
 		</div>
+		
+		<br />
+		
+		<button type="submit" @click="submit">提交</button>
     </div>
 	
 	<!-- 单选按钮 -->
@@ -52,7 +56,19 @@
 				checked: false,
 				checkedNames: [],
 				picked: ''
-    		}
+    		},
+			methods: {
+				submit: function() {
+					var obj = {
+						message: this.message,
+						multiline: this.multiline,
+						checked: this.checked,
+						checkedNames: this.checkedNames,
+						picked: this.picked
+					};
+					console.log(obj);
+				}
+			}
     	});
 		
 		new Vue({
