@@ -108,6 +108,8 @@
 				{{ option.text }}
 			</option>
 		</select>
+		<br />
+		<button type="submit" @click="submit">提交</button>
 	</div>
 	<script>
 		new Vue({
@@ -119,6 +121,11 @@
 					{ text: 'Two', value: 'B' },
 					{ text: 'Three', value: 'C' }
 				]
+			},
+			methods:{
+				submit: function() {
+					alert(this.selected);
+				}
 			}
 		})
 	</script>
