@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <head>
     <meta charset="utf-8">
     <title>Hello Vue!</title>
@@ -6,10 +7,24 @@
 </head>
 
 <body>
+	<!-- 第一个例子，数据绑定 -->
+	<div id="app">
+	    {{ message }}
+	</div>
+	
+	<script>
+	    new Vue({
+	        el: '#app',
+	        data: {
+	            message: 'Hello Vue!'
+	        }
+	    });
+	</script>
+	
     <!-- v-bind 指令，元素绑定，将 HTML 元素属性和 Vue 中数据做绑定-->
     <!-- 本例中 将 title 属性和 Vue 中的 message 属性绑定在了一起-->
-    <div id='app-2'>
-        <span v-bind:title='message'>
+    <div id="app-2">
+        <span v-bind:title="message">
             鼠标悬停几秒钟查看此处动态绑定的提示信息！
         </span>
     </div>
