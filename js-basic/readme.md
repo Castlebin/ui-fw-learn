@@ -14,13 +14,13 @@ https://www.runoob.com/js/js-tutorial.html
   在 JavaScript 中，不会创建类，也不会通过类来创建对象（就像在其他面向对象的语言中那样）。
   JavaScript 基于 prototype，而不是基于类的。
 - 所有 JavaScript 数字均为 64 位，都是浮点类型，可能会不准确（IEEE754 标准）
-  JavaScript 不是类型语言。与许多其他编程语言不同，JavaScript 不定义不同类型的数字，比如整数、短、长、浮点等等。在 JavaScript 中，数字不分为整数类型和浮点型类型，所有的数字都是 浮点型类型
+  JavaScript 不是类型语言。与许多其他编程语言不同，JavaScript 不定义不同类型的数字，比如整数、短、长、浮点等等。在 JavaScript 中，数字不分为整数类型和浮点型类型，所有的数字都是 **浮点型类型**。所以声明的数字最大值并不是 2^63 - 1，而是 2 的 50 多次方多
 - JavaScript 变量提升：JavaScript 中，变量的声明都会被提升到函数的最顶部。（初始化的语句不会提升）(限 var 声明的变量，let 声明的不行)
   同理 函数的声明，会被提升到它所在代码块作用域的最顶部。
 
 JavaScript 数据类型
 
-- 值类型(基本类型)：字符串（String）、数字(Number)、布尔(Boolean)、对空（Null）、未定义（Undefined）、Symbol。
+- 值类型(基本类型)：字符串（String）、数字(Number)、布尔(Boolean)、空（Null）、未定义（Undefined）、Symbol。
 - 引用数据类型：对象(Object)、数组(Array)、函数(Function)。
 - null 和 undefined 的值相等，但类型不等：
   typeof undefined // undefined
