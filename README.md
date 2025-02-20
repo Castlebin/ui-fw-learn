@@ -15,6 +15,13 @@ cd <project-name>      # 你新建的项目名称
 npm install
 ```
 
+注意：React 官网上推荐使用 Vite 来创建新项目的命令是这样的：
+```
+npm create vite@latest my-app -- --template react             # 使用 React 模板创建了一个名为 my-app 的项目
+```
+这里的 `-- --template react` 是指定使用 React 模板，但是这个命令会默认使用 JavaScript 来编写组件，如果你想使用 TypeScript 来编写组件，可以在创建项目后手动修改。
+如果默认创建 TypeScript 项目，可以使用 `npm create vite@latest my-app -- --template react-ts`   (和我们上面的方式效果完全一致) 。
+
 ### 2. 运行项目
 ```shell
 npm run dev
