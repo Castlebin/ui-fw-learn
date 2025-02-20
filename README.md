@@ -38,6 +38,9 @@ export default defineConfig({
 1. 创建 React 组件
 
 Vite 配合 React 的开发方式和普通的 React 项目一样。你可以在 `src` 文件夹下创建 React 组件。
+
+> 注意：请都使用 `.tsx` 文件来创建 React 组件，使用 TypeScript 来编写组件。不要使用 `.jsx` 文件，打包可能会出现问题！
+
 ```tsx
 // src/components/Greeting.tsx
 const Greeting = () => {
