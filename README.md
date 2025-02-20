@@ -132,3 +132,7 @@ import Greeting from '@components/Greeting';
 ```shell
 npm install @types/node
 ```
+
+4. React Fast Refresh
+默认情况下，Vite 配置了 React Fast Refresh，这意味着你对 React 组件的修改将会热更新并保持应用的状态。
+
