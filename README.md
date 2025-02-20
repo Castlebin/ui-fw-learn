@@ -33,3 +33,56 @@ export default defineConfig({
   },
 });
 ```
+
+### 4. Reactor 组件开发
+1. 创建 React 组件
+
+Vite 配合 React 的开发方式和普通的 React 项目一样。你可以在 `src` 文件夹下创建 React 组件。
+```jsx
+// src/components/Greeting.jsx
+import React from 'react';
+
+const Greeting = () => {
+  return <h1>Hello, Vite and React!</h1>;
+};
+
+export default Greeting;
+```
+2. 使用组件
+在 `src/App.jsx` 中引入创建的组件并使用：
+```jsx
+// src/App.jsx
+import React from 'react';
+import Greeting from './components/Greeting';
+
+function App() {
+  return (
+    <div>
+      <Greeting />
+    </div>
+  );
+}
+
+export default App;
+```
+
+### 5. React 热更新与开发体验
+Vite 提供了非常优秀的热模块替换（HMR）功能，这意味着当你修改组件时，页面会立即更新，无需刷新浏览器。
+
+例如，你在 `Greeting.jsx` 文件中做了修改，Vite 会自动更新到浏览器中，而不需要手动刷新。
+
+### 6. 处理静态资源
+Vite 会自动处理静态资源的导入，图片、CSS 文件等可以直接导入到 JavaScript 中：
+```jsx
+// 导入图片
+import logo from './assets/logo.png';
+
+function App() {
+  return (
+    <div>
+        {/* 使用图片 */}
+      <img src={logo} alt="logo" />
+    </div>
+  );
+}
+```
