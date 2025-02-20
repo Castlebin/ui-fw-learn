@@ -6,12 +6,14 @@
 ## 使用 vite 搭建 React 项目
 
 ### 1. 新建项目
-```shell
-npm create vite@latest react_vite_test_1 --template react
-cd react_vite_test_1
+```
+npm create vite@latest
+```
+按照提示输入 项目名称，然后选择 `react` 模板，再选择 `TypeScript`。等待项目创建完成后，根据提示进入项目目录、安装依赖：
+```
+cd <project-name>      # 你新建的项目名称
 npm install
 ```
-这个命令会创建一个名为 `react_vite_test_1` 的 React 项目，并且安装所有依赖。默认使用的是 Vite 作为构建工具，React 和 React-DOM 作为基础库。
 
 ### 2. 运行项目
 ```shell
