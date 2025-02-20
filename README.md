@@ -86,3 +86,9 @@ function App() {
   );
 }
 ```
+
+### 7. 常用插件和功能
+1. 使用 TypeScript
+Vite 默认支持 TypeScript，你可以直接在项目中使用 TypeScript。
+在项目中创建 `.ts` 或 `.tsx` 文件，Vite 会自动编译 TypeScript。
+
