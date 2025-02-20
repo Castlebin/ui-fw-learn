@@ -21,3 +21,15 @@ npm run dev
 
 这时候可以打开浏览器访问 http://localhost:5173，你应该能看到 Vite 提供的默认欢迎页面。
 
+### 3. Vite 配置
+Vite 的配置文件是 `vite.config.js`，这里可以配置一些构建选项。比如，可以配置 `server` 选项来修改开发服务器的端口：
+```js
+import { defineConfig } from 'vite';
+
+export default defineConfig({
+  plugins: [],   // 插件配置，Vite 支持很多插件，比如 React 插件、TypeScript 插件等。
+  server: {
+    port: 5173,   // 端口号
+  },
+});
+```
