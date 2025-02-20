@@ -108,3 +108,27 @@ function App() {
   );
 }
 ```
+
+3. 路径别名
+Vite 支持路径别名，你可以在 `vite.config.js` 中配置路径别名：
+```js
+import { defineConfig } from 'vite';
+import path from 'path';
+
+export default defineConfig({
+  resolve: {
+    alias: {
+      '@components': path.resolve(__dirname, './src/components'),
+    },
+  },
+});
+```
+然后，你可以在项目中使用别名来导入模块：
+```jsx
+import Greeting from '@components/Greeting';
+```
+
+注意：可能需要安装 `@types/node` 组件，因为使用了 `path` 模块 
+```shell
+npm install @types/node
+```
