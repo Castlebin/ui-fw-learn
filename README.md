@@ -38,10 +38,8 @@ export default defineConfig({
 1. 创建 React 组件
 
 Vite 配合 React 的开发方式和普通的 React 项目一样。你可以在 `src` 文件夹下创建 React 组件。
-```jsx
-// src/components/Greeting.jsx
-import React from 'react';
-
+```tsx
+// src/components/Greeting.tsx
 const Greeting = () => {
   return <h1>Hello, Vite and React!</h1>;
 };
@@ -49,10 +47,9 @@ const Greeting = () => {
 export default Greeting;
 ```
 2. 使用组件
-在 `src/App.jsx` 中引入创建的组件并使用：
+在 `src/App.tsx` 中引入创建的组件并使用：
 ```jsx
-// src/App.jsx
-import React from 'react';
+// src/App.tsx
 import Greeting from './components/Greeting';
 
 function App() {
@@ -69,7 +66,7 @@ export default App;
 ### 5. React 热更新与开发体验
 Vite 提供了非常优秀的热模块替换（HMR）功能，这意味着当你修改组件时，页面会立即更新，无需刷新浏览器。
 
-例如，你在 `Greeting.jsx` 文件中做了修改，Vite 会自动更新到浏览器中，而不需要手动刷新。
+例如，你在 `Greeting.tsx` 文件中做了修改，Vite 会自动更新到浏览器中，而不需要手动刷新。
 
 ### 6. 处理静态资源
 Vite 会自动处理静态资源的导入，图片、CSS 文件等可以直接导入到 JavaScript 中：
@@ -109,30 +106,15 @@ function App() {
 }
 ```
 
-3. 路径别名
-Vite 支持路径别名，你可以在 `vite.config.js` 中配置路径别名：
-```js
-import { defineConfig } from 'vite';
-import path from 'path';
-
-export default defineConfig({
-  resolve: {
-    alias: {
-      '@components': path.resolve(__dirname, './src/components'),
-    },
-  },
-});
-```
-然后，你可以在项目中使用别名来导入模块：
-```jsx
-import Greeting from '@components/Greeting';
-```
-
-注意：可能需要安装 `@types/node` 组件，因为使用了 `path` 模块 
+### 8. 打包和发布
+1. 打包应用
 ```shell
-npm install @types/node
+npm run build
 ```
+这个命令会将项目打包到 `dist` 文件夹中，你可以将 `dist` 文件夹中的文件部署到服务器上。
 
-4. React Fast Refresh
-默认情况下，Vite 配置了 React Fast Refresh，这意味着你对 React 组件的修改将会热更新并保持应用的状态。
-
+2. 预览打包后的应用
+```shell
+npm run preview
+```
+这个命令会启动一个本地服务器，预览打包后的应用。

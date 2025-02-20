@@ -4,9 +4,9 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 // 导入自定义的组件 Greeting
-import Greeting from '@components/Greeting';
+import Greeting from './components/Greeting';
 
-import Hello from '@components/Hello';
+import Hello from './components/Hello';
 
 // 导入图片资源 （ 上面的 reactLogo 和 ViteLogo 也是这么导入的 ）
 import logo from './assets/logo.png'
