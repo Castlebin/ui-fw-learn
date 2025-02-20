@@ -14,8 +14,19 @@ import logo from './assets/logo.png'
 function App() {
   const [count, setCount] = useState(0)
 
+  // 使用环境变
+  const name = import.meta.env.VITE_APP_NAME;
+  console.log('name:', name);
+
   return (
     <>
+    <div>
+      {/* 使用环境变量 */}
+      <h1>配置项：{import.meta.env.VITE_APP_NAME}</h1>
+    </div>
+      {/* 也可以这样写 */}
+      <h2>配置项：{name}</h2>
+
       <Hello />
 
       // 使用自定义的组件 Greeting  （可以看到这行不是注释）是 HTML 

@@ -92,3 +92,19 @@ function App() {
 Vite 默认支持 TypeScript，你可以直接在项目中使用 TypeScript。
 在项目中创建 `.ts` 或 `.tsx` 文件，Vite 会自动编译 TypeScript。
 
+2. 环境变量
+Vite 支持环境变量，你可以在项目中创建 `.env` 文件来配置环境变量：
+```shell
+# .env
+VITE_APP_NAME=React Vite App
+```
+然后，你可以在项目中使用 `import.meta.env` 来访问环境变量：
+```jsx
+function App() {
+  return (
+    <div>
+      <h1>{import.meta.env.VITE_APP_NAME}</h1>
+    </div>
+  );
+}
+```
