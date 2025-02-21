@@ -11,6 +11,10 @@ import Hello from './components/Hello';
 // 导入图片资源 （ 上面的 reactLogo 和 ViteLogo 也是这么导入的 ）
 import logo from './assets/logo.png'
 
+function handleClick() {
+  alert('你点击了!')
+}
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -20,7 +24,7 @@ function App() {
 
   return (
     <>
-    <div>
+    <div onClick={handleClick}>
       {/* 使用环境变量 */}
       <h1>配置项：{import.meta.env.VITE_APP_NAME}</h1>
     </div>
