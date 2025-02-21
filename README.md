@@ -9,7 +9,7 @@
 ```
 npm create vite@latest
 ```
-按照提示输入 项目名称，然后选择 `react` 模板，再选择 `TypeScript`。等待项目创建完成后，根据提示进入项目目录、安装依赖：
+按照提示输入 项目名称，然后选择 `react` 模板，再选择 `TypeScript` （或者 `TypeScript + SWC` ）。等待项目创建完成后，根据提示进入项目目录、安装依赖：
 ```
 cd <project-name>      # 你新建的项目名称
 npm install
