@@ -37,7 +37,7 @@ function App() {
 
       /* 这行也不是注释  */
       {/* 使用图片。    这样才是注释 */}
-      <img src={logo} alt="logo" />
+      <img src={logo} alt="logo" className='myPic' />
       
       <Greeting />
 
