@@ -5,6 +5,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import MyApp from './components/MyApp'
 import Profile from './components/Profile'
+import ShoppingList from './components/ShoppingList'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -30,6 +31,9 @@ function App() {
 
   return (
     <>
+      <h1>Shopping List：</h1>
+      <ShoppingList />
+
       <ul>{listItems}</ul>
       {content}  {/* 使用条件渲染 */}
       <img src={anPic} alt="an_pic" className='my-css' />
