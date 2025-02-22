@@ -9,9 +9,17 @@ import Profile from './components/Profile'
 function App() {
   const [count, setCount] = useState(0)
 
+  // 通过条件渲染，决定渲染哪个组件
+  let content;
+  if (2 > 1) {
+    content = <MyApp />;
+  } else {
+    content = <Profile />;
+  }
+
   return (
     <>
-      <MyApp />
+      {content}  {/* 使用条件渲染 */}
       <img src={anPic} alt="an_pic" className='my-css' />
       <Profile />
       <div>
