@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
+import anPic from './assets/an_pic.png'
 import viteLogo from '/vite.svg'
 import './App.css'
 import MyApp from './components/MyApp'
@@ -10,6 +11,7 @@ function App() {
   return (
     <>
       <MyApp />
+      <img src={anPic} alt="an_pic" className='my-css' />
       <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />

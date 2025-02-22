@@ -40,3 +40,8 @@
 .read-the-docs {
   color: #888;
 }
+
+.my-css {
+  border-radius: 50%;
+  height: 5em;
+}
