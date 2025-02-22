@@ -17,8 +17,20 @@ function App() {
     content = <Profile />;
   }
 
+  const products = [
+    { title: 'Cabbage', id: 1 },
+    { title: 'Garlic', id: 2 },
+    { title: 'Apple', id: 3 },
+  ];
+  const listItems = products.map(product =>
+    <li key={product.id}>
+      {product.title}
+    </li>
+  );
+
   return (
     <>
+      <ul>{listItems}</ul>
       {content}  {/* 使用条件渲染 */}
       <img src={anPic} alt="an_pic" className='my-css' />
       <Profile />
