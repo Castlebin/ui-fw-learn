@@ -8,6 +8,7 @@ import Profile from './components/Profile'
 import ShoppingList from './components/ShoppingList'
 
 function App() {
+  // useState  hook
   const [count, setCount] = useState(0)
 
   // 通过条件渲染，决定渲染哪个组件
@@ -50,6 +51,7 @@ function App() {
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
+
         </button>
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
